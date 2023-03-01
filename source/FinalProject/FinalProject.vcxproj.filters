@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="PartyMember.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="PlayerInput.cpp" />
+    <ClCompile Include="KeyboardInput.cpp" />
+    <ClCompile Include="UIElement.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="Context.cpp" />
+    <ClCompile Include="Neighbors.cpp" />
+    <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="TurnHandler.cpp" />
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="MenuBox.cpp" />
+    <ClCompile Include="SequencePlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="PartyMember.h" />
+    <ClInclude Include="RectTool.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="PlayerInput.h" />
+    <ClInclude Include="KeyboardInput.h" />
+    <ClInclude Include="UIElement.h" />
+    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="Neighbors.h" />
+    <ClInclude Include="Battle.h" />
+    <ClInclude Include="TurnHandler.h" />
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="MenuBox.h" />
+    <ClInclude Include="SequencePlayer.h" />
+    <ClInclude Include="Random.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PNG\PartySprites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Content\BattleBG.png" />
+    <CopyFileToFolders Include="Content\Enemies.png" />
+    <CopyFileToFolders Include="Content\GameData.json" />
+    <CopyFileToFolders Include="Content\PartySprites.png" />
+    <CopyFileToFolders Include="Content\UI.png" />
+    <CopyFileToFolders Include="Content\Cursor.png" />
+    <CopyFileToFolders Include="Content\Scanlines.png" />
+    <CopyFileToFolders Include="Content\Menus.png" />
+    <CopyFileToFolders Include="Content\Panels.png" />
+    <CopyFileToFolders Include="Content\Battle.wav" />
+    <CopyFileToFolders Include="Content\Victory.wav" />
+    <CopyFileToFolders Include="Content\BlackMagic.wav" />
+    <CopyFileToFolders Include="Content\GameOver.wav" />
+    <CopyFileToFolders Include="Content\Hit.wav" />
+    <CopyFileToFolders Include="Content\Miss.wav" />
+    <CopyFileToFolders Include="Content\Restorative.wav" />
+    <CopyFileToFolders Include="Content\MagicMenus.png" />
+    <CopyFileToFolders Include="Content\FFFont.ttf" />
+  </ItemGroup>
+</Project>

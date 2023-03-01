@@ -1,0 +1,739 @@
+{
+  "SpriteSheets": [
+    {
+      "Name": "Background",
+      "Filepath": "Content/BattleBG.png"
+    },
+    {
+      "Name": "Menus",
+      "Filepath": "Content/Menus.png"
+    },
+    {
+      "Name": "UI",
+      "Filepath": "Content/UI.png"
+    },
+    {
+      "Name": "PartySprites",
+      "Filepath": "Content/PartySprites.png"
+    },
+    {
+      "Name": "Enemies",
+      "Filepath": "Content/Enemies.png"
+    },
+    {
+      "Name": "Cursor",
+      "Filepath": "Content/Cursor.png"
+    },
+    {
+      "Name": "Scanlines",
+      "Filepath": "Content/Scanlines.png"
+    },
+    {
+      "Name": "Panels",
+      "Filepath": "Content/Panels.png"
+    },
+    {
+      "Name": "MagicMenus",
+      "Filepath": "Content/MagicMenus.png"
+    }
+  ],
+
+  "PartyMembers": [
+    {
+      "Name": "Cloud",
+      "Class": "Fighter",
+      "SpriteSheet": "PartySprites",
+      "Weapon": "CloudSword",
+      "Offset": {
+        "RectData": [ 186, 115, 16, 24 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 640, 196, 64, 96 ]
+      },
+      "Animations": {
+        "Walk": {
+          "Name": "Walk",
+          "RectData": [ 210, 115, 16, 24 ]
+        },
+        "CastReady": {
+          "Name": "CastReady",
+          "RectData": [ 233, 115, 16, 24 ]
+        },
+        "Casting": {
+          "Name": "Casting",
+          "RectData": [ 254, 115, 16, 24 ]
+        },
+        "LowHealth": {
+          "Name": "LowHealth",
+          "RectData": [ 276, 115, 16, 24 ]
+        },
+        "KO": {
+          "Name": "KO",
+          "RectData": [ 313, 115, 24, 24 ]
+        },
+        "Idle": {
+          "Name": "Idle",
+          "RectData": [ 186, 115, 16, 24 ]
+        },
+        "Clear": {
+          "Name": "Clear",
+          "RectData": [ 1, 1, 1, 1 ]
+        }
+      },
+      "HealthPosition": {
+         "RectData": [ 822, 96, 103, 90 ]
+      },
+      "HP": 720,
+      "Stats": [ 69, 43, 0, 34, 125, 192, 77 ]
+    },
+    {
+      "Name": "Vivi",
+      "Class": "Black Mage",
+      "SpriteSheet": "PartySprites",
+      "Weapon": "ViviDagger",
+      "Offset": {
+        "RectData": [ 187, 72, 16, 24 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 640, 292, 64, 96 ]
+      },
+      "Animations": {
+        "Walk": {
+          "Name": "Walk",
+          "RectData": [ 208, 72, 16, 24 ]
+        },
+        "CastReady": {
+          "Name": "CastReady",
+          "RectData": [ 232, 72, 16, 24 ]
+        },
+        "Casting": {
+          "Name": "Casting",
+          "RectData": [ 257, 72, 16, 24 ]
+        },
+        "LowHealth": {
+          "Name": "LowHealth",
+          "RectData": [ 281, 72, 16, 24 ]
+        },
+        "KO": {
+          "Name": "KO",
+          "RectData": [ 305, 72, 24, 24 ]
+        },
+        "Idle": {
+          "Name": "Idle",
+          "RectData": [ 187, 72, 16, 24 ]
+        }
+      },
+      "HealthPosition": {
+        "RectData": [ 822, 230, 103, 90 ]
+      },
+      "HP": 533,
+      "Stats": [ 19, 34, 69, 30, 32, 89, 76 ]
+
+    },
+    {
+      "Name": "Aerith",
+      "Class": "White Mage",
+      "SpriteSheet": "PartySprites",
+      "Weapon": "AerithHammer",
+      "Offset": {
+        "RectData": [ 181, 191, 16, 24 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 640, 388, 64, 96 ]
+      },
+      "Animations": {
+        "Walk": {
+          "Name": "Walk",
+          "RectData": [ 203, 191, 16, 24 ]
+        },
+        "CastReady": {
+          "Name": "CastReady",
+          "RectData": [ 225, 191, 16, 24 ]
+        },
+        "Casting": {
+          "Name": "Casting",
+          "RectData": [ 252, 191, 16, 24 ]
+        },
+        "LowHealth": {
+          "Name": "LowHealth",
+          "RectData": [ 277, 191, 16, 24 ]
+        },
+        "KO": {
+          "Name": "KO",
+          "RectData": [ 316, 191, 24, 24 ]
+        },
+        "Idle": {
+          "Name": "Idle",
+          "RectData": [ 181, 191, 16, 24 ]
+        }
+      },
+      "HealthPosition": {
+        "RectData": [ 822, 358, 103, 90 ]
+      },
+      "HP": 529,
+      "Stats": [ 32, 27, 51, 34, 34, 69, 69 ]
+
+    },
+    {
+      "Name": "Al",
+      "Class": "Red Mage",
+      "SpriteSheet": "PartySprites",
+      "Weapon": "AlSword",
+      "Offset": {
+        "RectData": [ 5, 195, 16, 24 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 640, 488, 64, 92 ]
+      },
+      "Animations": {
+        "Walk": {
+          "Name": "Walk",
+          "RectData": [ 26, 195, 16, 24 ]
+        },
+        "CastReady": {
+          "Name": "CastReady",
+          "RectData": [ 46, 195, 16, 24 ]
+        },
+        "Casting": {
+          "Name": "Casting",
+          "RectData": [ 66, 195, 16, 24 ]
+        },
+        "LowHealth": {
+          "Name": "LowHealth",
+          "RectData": [ 87, 195, 16, 24 ]
+        },
+        "KO": {
+          "Name": "KO",
+          "RectData": [ 107, 195, 24, 24 ]
+        },
+        "Idle": {
+          "Name": "Idle",
+          "RectData": [ 5, 195, 16, 24 ]
+        }
+      },
+      "HealthPosition": {
+        "RectData": [ 822, 480, 103, 90 ]
+      },
+      "HP": 580,
+      "Stats": [ 41, 34, 38, 36, 85, 155, 79 ]
+    }
+  ],
+
+  "Enemies": [
+    {
+      "Name": "Chaos",
+      "SpriteSheet": "Enemies",
+      "Offset": {
+        "RectData": [ 172, 1440, 108, 95 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 64, 196, 432, 380 ]
+      },
+      "HP": 2000,
+      "Stats": [ 150, 100, 200, 100, 200 ]
+    }
+  ],
+  "Cursor": [
+    {
+      "Name": "Cursor",
+      "SpriteSheet": "Cursor",
+      "Offset": {
+        "RectData": [ 0, 0, 32, 32 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 704, 612, 64, 64 ]
+      }
+    }
+  ],
+  "Menus": [
+    {
+      "Name": "SubMenu",
+      "SpriteSheet": "Menus",
+      "Offset": {
+        "RectData": [ 9, 146, 166, 85 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 604, 924, 300 ]
+      }
+    },
+    {
+      "Name": "BattleCanvas",
+      "SpriteSheet": "Menus",
+      "Offset": {
+        "RectData": [ 0, 0, 1, 1 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 0, 584, 1024, 376 ]
+      }
+    },
+    {
+      "Name": "Terminated",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 214, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 824, 556, 84 ]
+      }
+    }
+  ],
+  "MagicMenus": [
+    {
+      "Name": "Cloud",
+      "SpriteSheet": "MagicMenus",
+      "Offset": {
+        "RectData": [ 52, 75, 921, 301 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 604, 921, 301 ]
+      }
+    },
+    {
+      "Name": "Vivi",
+      "SpriteSheet": "MagicMenus",
+      "Offset": {
+        "RectData": [ 52, 378, 921, 301 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 604, 921, 301 ]
+      }
+    },
+    {
+      "Name": "Aerith",
+      "SpriteSheet": "MagicMenus",
+      "Offset": {
+        "RectData": [ 52, 680, 921, 301 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 604, 921, 301 ]
+      }
+    },
+    {
+      "Name": "Al",
+      "SpriteSheet": "MagicMenus",
+      "Offset": {
+        "RectData": [ 52, 983, 921, 301 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 604, 921, 301 ]
+      }
+    }
+
+  ],
+  "ActorPanels": [
+    {
+      "Name": "Cloud",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 17, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 616, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Vivi",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 41, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 616, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Aerith",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 76, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 616, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Al",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 102, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 616, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Chaos",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 127, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 616, 556, 84 ]
+      }
+    }
+  ],
+  "SubjectPanels": [
+    {
+      "Name": "Cloud",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 17, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 720, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Vivi",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 41, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 720, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Aerith",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 76, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 720, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Al",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 102, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 720, 556, 84 ]
+      }
+    },
+    {
+      "Name": "Chaos",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 127, 139, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 36, 720, 556, 84 ]
+      }
+    }
+  ],
+  "ActionPanels": [
+    {
+      "Name": "Curaga",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 151, 17, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    },
+    {
+      "Name": "Life",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 151, 42, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    },
+    {
+      "Name": "Thundaga",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 151, 67, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    },
+    {
+      "Name": "Blizzaga",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 151, 92, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    },
+    {
+      "Name": "Cure",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 151, 117, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    },
+    {
+      "Name": "Hit",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 189, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    },
+    {
+      "Name": "Miss",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 94, 167, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 616, 356, 84 ]
+      }
+    }
+  ],
+  "ResultPanels": [
+    {
+      "Name": "Result",
+      "SpriteSheet": "Panels",
+      "Offset": {
+        "RectData": [ 3, 167, 89, 21 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 612, 720, 356, 84 ]
+      }
+    }
+  ],
+  "Weapons": [
+    {
+      "Name": "Cloud",
+      "SpriteSheet": "PartySprites",
+      "Offset": {
+        "RectData": [ 122, 364, 18, 16 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 501, 190, 72, 64 ]
+      }
+    },
+    {
+      "Name": "Al",
+      "SpriteSheet": "PartySprites",
+      "Offset": {
+        "RectData": [ 122, 364, 18, 16 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 501, 476, 72, 64 ]
+      }
+    },
+    {
+      "Name": "Vivi",
+      "SpriteSheet": "PartySprites",
+      "Offset": {
+        "RectData": [ 34, 424, 11, 12 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 529, 314, 44, 48 ]
+      }
+    },
+    {
+      "Name": "Aerith",
+      "SpriteSheet": "PartySprites",
+      "Offset": {
+        "RectData": [ 101, 367, 16, 13 ]
+      },
+      "ScreenPosition": {
+        "RectData": [ 510, 404, 64, 52 ]
+      }
+    }
+
+  ],
+  "MenuContexts": {
+    "Main": {
+      "isFinalContext": false,
+      "ContextName": "Main",
+      "StartingLocation": "Attack",
+      "Positions": {
+        "Attack": {
+          "ResultantContext": "EnemySelection",
+          "Name": "Attack",
+          "North": "Magic",
+          "South": "Magic",
+          "RectData": [ 704, 612, 64, 64 ]
+        },
+        "Magic": {
+          "ResultantContext": "MagicSubMenu",
+          "Name": "Magic",
+          "North": "Attack",
+          "South": "Attack",
+          "RectData": [ 704, 676, 64, 64 ]
+        }
+      }
+    },
+    "PartySelection": {
+      "isFinalContext": true,
+      "ContextName": "PartySelection",
+      "StartingLocation": "Cloud",
+      "Positions": {
+        "Cloud": {
+          "Name": "Cloud",
+          "North": "Al",
+          "South": "Vivi",
+          "RectData": [ 505, 196, 64, 64 ]
+        },
+        "Vivi": {
+          "Name": "Vivi",
+          "North": "Cloud",
+          "South": "Aerith",
+          "RectData": [ 505, 292, 64, 64 ]
+        },
+        "Aerith": {
+          "Name": "Aerith",
+          "North": "Vivi",
+          "South": "Al",
+          "RectData": [ 505, 388, 64, 64 ]
+        },
+        "Al": {
+          "Name": "Al",
+          "North": "Aerith",
+          "South": "Cloud",
+          "RectData": [ 505, 488, 64, 64 ]
+        }
+      }
+    },
+    "EnemySelection": {
+      "isFinalContext": true,
+      "ContextName": "EnemySelection",
+      "StartingLocation": "Chaos",
+      "Positions": {
+        "Chaos": {
+          "Name": "Chaos",
+          "RectData": [ 64, 196, 64, 64 ]
+        }
+      }
+    },
+    "MagicSubMenu": {
+      "isFinalContext": false,
+      "isSubMenu": true,
+      "isOwned": true,
+      "ContextName": "MagicSubMenu",
+      "StartingLocation": "MagicItem1",
+      "Positions": {
+        "Chaos": {
+          "Name": "MagicItem1",
+          "ResultantContext": "EnemySelection",
+          "RectData": [ 36, 604, 64, 64 ]
+        }
+      }
+    },
+    "ItemSubMenu": {
+      "isFinalContext": false,
+      "isSubMenu": true,
+      "ContextName": "ItemSubMenu",
+      "StartingLocation": "MagicItem1",
+      "Positions": {
+        "Chaos": {
+          "Name": "MagicItem1",
+          "ResultantContext": "EnemySelection",
+          "RectData": [ 36, 604, 64, 64 ]
+        }
+      }
+    }
+  },
+  "OwnedContexts": {
+    "CloudMagicSubMenu": {
+      "isFinalContext": false,
+      "isSubMenu": true,
+      "ContextName": "Cloud",
+      "StartingLocation": "Cure",
+      "Positions": {
+        "Chaos": {
+          "Name": "Cure",
+          "ResultantContext": "PartySelection",
+          "RectData": [ 19, 645, 64, 64 ]
+        }
+      }
+    },
+    "ViviMagicSubMenu": {
+      "isFinalContext": false,
+      "isSubMenu": true,
+      "ContextName": "Vivi",
+      "StartingLocation": "Thundaga",
+      "Positions": {
+        "Thundaga": {
+          "Name": "Thundaga",
+          "East": "Blizzaga",
+          "ResultantContext": "EnemySelection",
+          "RectData": [ 19, 645, 64, 64 ]
+        },
+        "Blizzaga": {
+          "Name": "Blizzaga",
+          "West": "Thundaga",
+          "ResultantContext": "EnemySelection",
+          "RectData": [ 466, 645, 64, 64 ]
+        }
+      }
+    },
+    "AerithMagicSubMenu": {
+      "isFinalContext": false,
+      "isSubMenu": true,
+      "ContextName": "Aerith",
+      "StartingLocation": "Curaga",
+      "Positions": {
+        "Curaga": {
+          "Name": "Curaga",
+          "East": "Life",
+          "ResultantContext": "PartySelection",
+          "RectData": [ 19, 645, 64, 64 ]
+        },
+        "Life": {
+          "Name": "Life",
+          "West": "Curaga",
+          "ResultantContext": "PartySelection",
+          "RectData": [ 466, 645, 64, 64 ]
+        }
+      }
+    },
+    "AlMagicSubMenu": {
+      "isFinalContext": false,
+      "isSubMenu": true,
+      "ContextName": "Al",
+      "StartingLocation": "Thundaga",
+      "Positions": {
+        "Thundaga": {
+          "Name": "Thundaga",
+          "East": "Curaga",
+          "ResultantContext": "EnemySelection",
+          "RectData": [ 19, 645, 64, 64 ]
+        },
+        "Curaga": {
+          "Name": "Curaga",
+          "West": "Thundaga",
+          "ResultantContext": "PartySelection",
+          "RectData": [ 466, 645, 64, 64 ]
+        }
+      }
+    }
+  },
+  "SpellStrength": [
+    {
+      "Spell": "Blizzaga",
+      "Power": 70
+    },
+    {
+      "Spell": "Thundaga",
+      "Power": 60
+    },
+    {
+      "Spell": "Cure",
+      "Power": 16
+    },
+    {
+      "Spell": "Curaga",
+      "Power": 64
+    }
+  ]
+}
